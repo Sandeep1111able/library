@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: rgb(248, 248, 248);
+  background-color: #1e3a8a;
+  padding: 25px 0;
+  align-self: stretch;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #dbeafe;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.btn-add,
+.submit,
+.update {
+  background-color: #2563eb;
+}
+
+.btn-add:hover,
+.submit:hover,
+.update:hover {
+  background-color: #0c3897;
+}
+
+.book-collection {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fafafa;
+  padding: 50px;
+  font-size: 1.2rem;
+  width: 330px;
+  border-radius: 10px;
+  box-shadow: 0 30px 40px -20px;
+  border-top: 3px solid #549ef2;
+}
+
+.card p {
+  color: #585858;
+  margin-bottom: 5px;
+}
+
+.delete {
+  margin-left: 5px;
+}
+
+.delete,
+.cancel {
+  background-color: #991b1b;
+}
+
+.delete:hover,
+.cancel:hover {
+  background-color: #771414;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #202020b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 450px;
+  padding: 50px;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
